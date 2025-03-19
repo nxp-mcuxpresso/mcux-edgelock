@@ -1,5 +1,34 @@
 # Revision History
 
+# **KW45_K32W1xx_MCXW71_SDKFW2.0_RC1.1**
+
+## Release description
+
+This is the release note for loadable EdgeLock Enclave (ELE) Firmware. This ELE FW is authenticated and installed by ELE ROM. It provides new features, fixes, and exposes cryptographic services.
+
+Services exposed by this firmware:
+* Updates in EdgeLock2Go PSA key atributes combinations.
+* Updated maximal size of EdgeLock2Go blob.
+
+## Supported revision
+* KW45
+* K32W1xx
+* MCXW71
+
+# **KW45_K32W1xx_MCXW71_SDKFW2.0_RC1**
+
+## Release description
+
+This is the release note for loadable EdgeLock Enclave (ELE) Firmware. This ELE FW is authenticated and installed by ELE ROM. It provides new features, fixes, and exposes cryptographic services.
+
+Services exposed by this firmware:
+* Updates in EdgeLock2Go PSA key atributes combinations.
+
+## Supported revision
+* KW45
+* K32W1xx
+* MCXW71
+
 # **SDK_FW_KW45_K32W1xx_MCXW71_1_2_0_1_RC1**
 
 ## Release description
