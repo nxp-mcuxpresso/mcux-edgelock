@@ -32,3 +32,20 @@ Loading the firmwares is done by using the provided APIs for each of the SXXX
 systems' messaging units:
 * S200: `ELEMU_loadFw()`,
 * S400: `ELE_LoadFw()`.
+
+### Python script for binary file conversion
+A simple Python script is provided as part of this repository. It can be used
+for replicating the firmware loading flow shown in the SDK examples.
+
+The script `convert_binary_to_c_header.py` takes one positional argument,
+which is a path to the firmware binary that's to be converted to a C header.
+The resulting C header file will contain an array of `const uint8_t` values,
+containing the entire input firmware file.
+
+The output file (named `edgelock_firmware.h`) is created in
+the same directory, from which the script is run.
+
+Usage:
+```
+python convert_binary_to_c_header.py [-h|--help] FIRMWARE_BINARY_FILE
+```
