@@ -21,21 +21,26 @@ Guidelines to contribute will be posted in the future.
 ---------------------------------
 
 ## Using the Firmware
-This repository contains precompiled loadable firmware for the EdgeLock S200
-and S400 enclaves. The firmware files are provided in binary format and are
+This repository contains precompiled loadable firmware for various EdgeLock
+enclaves. The firmware files are provided in binary format and are
 intended to be loaded into memory alongside the application binary.
 
-For demonstration purposes, all SDK examples that utilize loadable
+Some devices are capable of loading such firmware during runtime.
+For demonstration purposes, all SDK examples that utilize runtime-loadable
 firmwares use a C-array representation of the corresponding firmware binary.
 
-Loading the firmwares is done by using the provided APIs for each of the SXXX
+Loading the firmwares is done by using the provided APIs for each of such
 systems' messaging units:
 * S200: `ELEMU_loadFw()`,
 * S400: `ELE_LoadFw()`.
 
+Enclaves without the runtime firmware loading capability:
+* ELE_HSEB.
+
 ### Python script for binary file conversion
 A simple Python script is provided as part of this repository. It can be used
-for replicating the firmware loading flow shown in the SDK examples.
+for replicating the firmware loading flow shown in the SDK examples for
+devices with the runtime loading capability.
 
 The script `convert_binary_to_c_header.py` takes one positional argument,
 which is a path to the firmware binary that's to be converted to a C header.
