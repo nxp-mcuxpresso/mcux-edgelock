@@ -1,10 +1,19 @@
 # Revision History
 
-# **KW47_A2_1_SDKFW1.0_EAR2**
+# **KW47_A2_1_SDKFW1_0_EAR3**
 
 ## Release description
 
 This is the release note for loadable EdgeLock Enclave (ELE) Firmware. This ELE FW is authenticated and installed by ELE ROM. It provides new features, fixes, and exposes cryptographic services.
+
+
+## FW version
+* 0x1000000 0x56b64c75
+
+## FW updates
+* Fixed problem with stack sharing between ROM and FW.
+
+# **KW47_A2_1_SDKFW1.0_EAR2**
 
 ## FW version
 * 0x1000000 0x96A49DED
@@ -12,6 +21,11 @@ This is the release note for loadable EdgeLock Enclave (ELE) Firmware. This ELE 
 ## FW updates
 * Support of EL2GO blob import features.
 * Support for Elgamal blob import according Geely specification.
+
+# **KW47_A2_SDKFW1.0_EAR1**
+
+## FW updates:
+* Adding support for Elgamal blob import according Geely specification.
 
 ## Supported revision
 * KW47 A2.1
