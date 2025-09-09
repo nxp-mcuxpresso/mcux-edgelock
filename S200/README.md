@@ -1,5 +1,18 @@
 # Revision History
 
+# **KW47_A2_1_SDKFW1_0**
+
+## Release description
+
+This is the release note for loadable EdgeLock Enclave (ELE) Firmware. This ELE FW is authenticated and installed by ELE ROM. It provides new features, fixes, and exposes cryptographic services.
+
+
+## FW version
+* 0x1000000 0xa4959964
+
+## FW updates
+* Fixed problem with tunnel request handling.
+
 # **KW47_A2_1_SDKFW1_0_EAR3**
 
 ## Release description
