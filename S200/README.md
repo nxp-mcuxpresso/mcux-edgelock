@@ -1,5 +1,14 @@
 # Revision History
 
+# **KW47_A2_1_SDKFW2.0**
+
+## FW version
+* 0x2000000 0xf62d24e
+
+## FW updates
+* Extended ASYMMETRIC_SPAKE2_DERIVE_KEY service to support CCC specification (Digital Key Technical Specification v4.0.0 CCC-TS-101).
+* Extended KEY_STORE_GET_KEY service with request to get public key called on private key only key object, which will newly calculate and return public key for NIST-P and Brainpool elliptic curves.
+
 # **KW47_A2_1_SDKFW1_0**
 
 ## Release description
