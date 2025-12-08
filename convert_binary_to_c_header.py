@@ -56,8 +56,8 @@ def main():
     str_final = "\n"
     for s in split_str:
         l = len(s)
-        tmp = ', 0x'.join(s[i:i+2] for i in range(0, l, 2))
-        str_final += ('  0x' + tmp + ',\n')
+        tmp = 'u, 0x'.join(s[i:i+2] for i in range(0, l, 2))
+        str_final += ('  0x' + tmp + 'u,\n')
 
     with open(OUT_FILENAME, 'w') as file:
 
