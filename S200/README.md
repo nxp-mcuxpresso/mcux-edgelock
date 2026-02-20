@@ -1,5 +1,16 @@
 # Revision History
 
+# **KW47_A2_1_SDKFW3.0**
+
+## FW version
+* 0x3000000 0x5a088ca
+
+## FW updates
+* Added ML-DSA 44/65/87 (FIPS 204) signature scheme support.
+* Added ML-KEM 512/768/1024 (FIPS 203) key encapsulation mechanism support.
+* Enhanced KEY_STORE_GET_KEY/KEY_STORE_SET_KEY/KEY_STORE_GENERATE_KEY service to support post-quantum cryptographic key objects.
+* Added NO_IMPORT_EXPORT key property check for targeting key object of EL2Go and Elgamal key blob import.
+
 # **KW47_A2_1_SDKFW2.0**
 
 ## FW version
