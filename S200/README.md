@@ -1,5 +1,17 @@
 # Revision History
 
+# **KW45_K32W1xx_MCXW71_SDKFW3.0_RFP1**
+
+## FW version
+* 0x3000000 0x858615fd
+
+## FW updates:
+Services exposed by this firmware:
+* Added HKDF key derivation support according RFC5869.
+* Added CKDF key derivation support according NIST 800-108 for SPC03 key derivation.
+* Added Miyaguchi-Preneel compression algorithm based Key derivation function (AUTOSAR SHE1.1).
+* EL2GO key import was extended with check for key NO_IMPORT property of targeting key object.
+
 # **KW47_A2_1_SDKFW3.0**
 
 ## FW version
