@@ -24,6 +24,13 @@ board:
 
 ### Firmware Installation
 
+The following was tested with J-Link version V9.32.
+Please use the latest available J-Link version for best device support.
+
+The firmware binaries are provided as `.bin.pink` files. Such files are not
+readily recognizable by J-Link, but can be simply *renamed* to `.bin` format
+before loading.
+
 #### J-Link Commands for Firmware Programming
     Erase 0x400000 0x440000           // For IVT (Initial Vector Table) variant: Erase 0x420000 0x460000
     Loadfile <FW_binary> 0x400000     // Address 0x420000 for IVT
@@ -32,3 +39,23 @@ board:
 
 #### (Optional) Verify Flag Write
     Mem8 0x1b000000 8
+
+## ELE HSEB Firmware Erasure
+If the device is in the `CUST_DEL` lifecycle, the firmware may also be erased.
+The easiest way to delete such firmware is during runtime by utilizing the
+firmware erasure service. Below you can find a code snippet for utilizing this
+service.
+
+Note that this service erases Sys-Img, Backup FW as well Current running HSE FW
+from code flash.
+
+    #include "hse_host.h"
+    ...
+    uint8_t muIf                    = 0U;
+    uint8_t muChannelIdx            = 1U;
+    hseSrvDescriptor_t* pHseSrvDesc = &gHseSrvDesc[muIf][muChannelIdx];
+    pHseSrvDesc->srvId              = HSE_SRV_ID_ERASE_FW;
+    hseSrvResponse_t response       = HSE_Send(muIf, muChannelIdx, gSyncTxOption, pHseSrvDesc);
+
+An erased firmware can be reinstalled by following the **Firmware Installation**
+steps described above.
