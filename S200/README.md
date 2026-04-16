@@ -1,5 +1,14 @@
 # Revision History
 
+# **KW47_A2_1_SDKFW4.0**
+
+## FW version
+* 0x4000000 0x6e0e6c9
+
+## FW updates
+* Added new service for EC multiplication (scalar mult point), addition (point + point) and subtraction (point - point) for Weierstrass elliptic curves. Inputs and outputs are key objects in the ELE keystore.
+* Fixed a problem with FW RAM retention configuration, which was causing the FW to be lost and required ELE restart after wake up from deep sleep lowpower mode. Now the loaded FW is retained in internal ELE RAM and ELE is immediately operable after waking up from deep sleep with a loaded FW.
+
 # **KW45_K32W1xx_MCXW71_SDKFW3.0_RFP1**
 
 ## FW version
