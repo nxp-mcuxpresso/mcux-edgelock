@@ -1,0 +1,46 @@
+# Copyright 2026 NXP
+# SPDX-License-Identifier: BSD-3-Clause
+
+menu "EdgeLock S400 Firmware"
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0alt_ahab_container
+        bool "mxrt1180b0alt-ahab-container.h"
+        help
+          RT1180 B0 alternate AHAB container.
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0alt_1c00_ahab_container
+        bool "mxrt1180b0alt-1c00-ahab-container.h"
+        help
+          RT1180 B0 alternate AHAB container (1c00 variant).
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0_ahab_container
+        bool "mxrt1180b0-ahab-container.h"
+        help
+          RT1180 B0 AHAB container.
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0_1c00_ahab_container
+        bool "mxrt1180b0-1c00-ahab-container.h"
+        help
+          RT1180 B0 AHAB container (1c00 variant).
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0el2goprov_1c00_ahab_container
+        bool "mxrt1180b0el2goprov-1c00-ahab-container.h"
+        help
+          RT1180 B0 EL2GO provisioning AHAB container (1c00 variant).
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0el2goprov_ahab_container
+        bool "mxrt1180b0el2goprov-ahab-container.h"
+        help
+          RT1180 B0 EL2GO provisioning AHAB container.
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0oemprov_1c00_ahab_container
+        bool "mxrt1180b0oemprov-1c00-ahab-container.h"
+        help
+          RT1180 B0 OEM provisioning AHAB container (1c00 variant).
+
+    config MCUX_COMPONENT_firmware.edgelock.s400.mxrt1180b0oemprov_ahab_container
+        bool "mxrt1180b0oemprov-ahab-container.h"
+        help
+          RT1180 B0 OEM provisioning AHAB container.
+
+endmenu
