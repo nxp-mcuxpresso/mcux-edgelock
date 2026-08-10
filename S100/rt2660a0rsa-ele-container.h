@@ -8,7 +8,7 @@
  */
 
 /*******************************************************************************
- * EdgeLock Firmware (rt2660a0rsa-ele-container-EAR2)
+ * EdgeLock Firmware mxrt2660a0rsa-ahab-container.img EAR3 (a8cce2f0)
  ******************************************************************************/
 
 #ifndef __EDGELOCK_FW_RT2660A0RSA_ELE_CONTAINER_H__
