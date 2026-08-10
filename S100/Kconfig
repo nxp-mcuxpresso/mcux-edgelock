@@ -1,0 +1,18 @@
+# Copyright 2026 NXP
+# SPDX-License-Identifier: BSD-3-Clause
+
+menu "EdgeLock S100 Firmware"
+
+    config MCUX_COMPONENT_component.edgelock.s100.rt2660a0_ele_container
+        bool "rt2660a0-ele-container.h"
+        help
+          EdgeLock S100 ELE firmware container for RT2660
+          (rt2660a0-ele-container.h).
+
+    config MCUX_COMPONENT_component.edgelock.s100.rt2660a0rsa_ele_container
+        bool "rt2660a0rsa-ele-container.h"
+        help
+          EdgeLock S100 ELE firmware container for RT2660 with RSA
+          (rt2660a0rsa-ele-container.h).
+
+endmenu

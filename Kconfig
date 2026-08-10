@@ -2,6 +2,6 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 
-#rsource "S100/Kconfig"
+rsource "S100/Kconfig"
 rsource "S400/Kconfig"
 
